@@ -4,22 +4,24 @@
     "airbnb/hooks",
     "eslint:recommended",
     "prettier",
-    "plugin:jsx-a11y/recommended"
+    "plugin:react/recommended"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
     "babelOptions": {
       "presets": ["@babel/preset-react"]
     },
-    "ecmaVersion": 8,
-    "requireConfigFile": false
+    "ecmaVersion": "latest",
+    "requireConfigFile": false,
+    "sourceType": "module"
   },
   "env": {
     "browser": true,
     "node": true,
-    "es6": true,
+    "es2021": true,
     "jest": true
   },
+  "overrides": [],
   "rules": {
     "react/jsx-props-no-spreading": 0,
     "react/prefer-stateless-function": 0,
